@@ -1,0 +1,22 @@
+.topo {
+    background-color: #982508;
+    height: 200px;
+}
+.titulo{
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+}
+.subtitulos{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.subtitulos2{
+    font-size: 15px;
+    font-weight: 500;
+ 
+}
+.texto{
+    font-size:20px;
+}

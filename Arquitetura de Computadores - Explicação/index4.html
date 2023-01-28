@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/index.css" />
+    <title>Arquitetura de Computadores</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header>
+        <div class="row topo">
+           <div class="col-6">
+            <img src="imagens/logoletra.png" class="img-fluid" />
+            </div>
+            <div class="col-6">
+            <img src="imagens/logofim.png" class="img-fluid" />
+                 </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">InfoHardware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link " href="index2.html">Projeto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="index4.html">Modificações Feitas</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="index3.html">Entre em Contato</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+        
+        
+        
+        <br/>
+        
+        </header>
+        
+        <div class="titulo">Modificações Feitas para Funcionar</div>
+        <p class="subtitulos">Decodificador(DEC)</p>
+        <div class="text-center">
+        <img src="imagens/mod_dec.JPG" class="img-fluid "/ style="width: 800px;">
+        </div>
+        <li class="texto">Modificado para que
+            consiga interpretar as novas instruções: <p style="text-decoration:underline">Subtração,Multiplicação e Divisão</p></li>
+        <br/>
+        <br/>
+        
+        <p class="subtitulos">Unidade de Controle(UC)</p>
+        <div class="text-center">
+        <img src="imagens/mod_uc.JPG" class="img-fluid "/ style="width: 800px;">
+        </div>
+        <br/>
+        <li class="texto">
+        UC envia novos sinais para permitir que a arquitetura consiga realizar as operações de subtração, multiplicação e divisão. A tabela “tabela_microprogramacao_uc” foi alterada para compor os códigos das novas microinstruções.
+        </li>
+        <br/>
+        <br/>
+        
+        <p class="subtitulos">Unidade Lógica e Aritmética(ULA)</p>
+        <div class="text-center">
+        <img src="imagens/mod_ula.JPG" class="img-fluid "/ style="width: 800px;">
+        </div>
+        
+        <li class="texto">Na Unidade Lógica e Aritmética – ULA,  novos componentes para
+fazer funcionar as novas instruções.</li>
+        <li class="texto">Teve que aumentar o DMX para poder receber o tanto de operações, e foi colocado um Reset_Tg
+        para poder sempre resetar os componentes aritméticos.</li>
+        <br/>
+        <footer class="row align-items-center topo">
+           <div class="col-4">
+            <img src="imagens/logoletra.png" class="img-fluid" width="700px;"/>
+            </div>
+             <div class="col-4"></div>
+            <div class="col-4 ">
+                <div class="row" >
+                    <div class="col-6">
+                <a href="index3.html" style="color: white;">Entre Em Contato</a>
+                        </div>
+                    <div class="col-4 ">
+                <a href="#" style="color: white;" >Sobre Nós</a>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+      </div>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>

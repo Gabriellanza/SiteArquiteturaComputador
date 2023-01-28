@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/index.css" />
+    <title>Arquitetura de Computadores</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header>
+        <div class="row topo">
+           <div class="col-6">
+            <img src="imagens/logoletra.png" class="img-fluid" />
+            </div>
+            <div class="col-6">
+            <img src="imagens/logofim.png" class="img-fluid" />
+                 </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">InfoHardware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link " href="index2.html">Projeto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="index4.html">Modificações Feitas</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link active" href="index3.html">Entre em Contato</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+        
+        
+        
+        
+        <br/>
+        
+        </header>
+        <p style="font-size: 20px;">Envie os dados que entraremos em Contato!!</p>
+        <main class="row align-items-center">
+        <div class="form-group col-4 ">
+            <label for="txtnome">Nome</label>
+            <input type="text" id="txtnome" class="form-control"/>
+        </div>
+        <div class="form-group col-4">
+            <label for="txtendereco">Endereço</label>
+            <input type="text" id="txtendereco" class="form-control"/>
+        </div>
+        <div class="form-group col-4">
+            <label for="txttelefone">Telefone</label>
+            <input type="text" id="txttelefone" class="form-control"/>
+        </div>
+        <div class="form-group col-4">
+            <label for="txtcidade">Cidade</label>
+            <input type="text" id="txtcidade" class="form-control"/>
+        </div>
+        <div class="form-group col-4">
+            <label for="txtemail">E-mail</label>
+            <input type="email" id="txtemail" class="form-control"/>
+        </div>
+         <br/>
+       
+                <div class="col-8">
+                <p style="font-weight: bold;">Dê uma sugestão, melhorias ou críticas(Opcional)</p>
+        <textarea id="txtarea" rows="3" cols="40" maxlength="500"></textarea>
+                    </div>
+              <div class="col-6">
+                <span id="envio"></span>
+              
+              </div>
+              
+            
+            </main>
+        <br/>
+          <button type="submit" id="btnenviar" class="btn btn-dark col align-self-center">Enviar</button>
+        <br/>
+        <br/>
+         <button type="submit" id="btnnovo" class="btn btn-dark col align-self-center">Nova Sugestão</button>
+         <br/>
+         <br/>
+        <br/>
+         <br/>
+        <footer class="row align-items-center topo">
+           <div class="col-4">
+            <img src="imagens/logoletra.png" class="img-fluid" width="700px;"/>
+            </div>
+             <div class="col-4"></div>
+            <div class="col-4 ">
+                <div class="row" >
+                    <div class="col-6">
+                <a href="index3.html" style="color: white;">Entre Em Contato</a>
+                        </div>
+                    <div class="col-4 ">
+                <a href="#" style="color: white;" >Sobre Nós</a>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+      </div>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      
+      <script src="jquery.mask.js"></script>
+      <script>
+        $(document).ready(function(){
+            $('#txttelefone').mask('00 000000000', {reverse: true});
+            $("#btnenviar").click(function(){
+                
+            
+            $("#txtnome").removeClass("is_invalid").removeClass("is_valid");
+            $("#txtendereco").removeClass("is_invalid").removeClass("is_valid");
+            $("#txttelefone").removeClass("is_invalid").removeClass("is_valid");
+            $("#txtcidade").removeClass("is_invalid").removeClass("is_valid");
+            $("#txtemail").removeClass("is_invalid").removeClass("is_valid");
+           
+
+            
+            var nome = $("#txtnome").val();
+            var endereco = $("#txtendereco").val();
+            var telefone = $("#txttelefone").val();
+            var cidade = $("#txtcidade").val();
+            var email = $("#txtemail").val();
+         
+            
+            if(nome == ""){
+                      $("#txtnome").addClass("is-invalid");
+                  }
+                  else{
+                      $("#txtnome").addClass("is-valid");
+                  }
+            
+                  if(endereco == ""){
+                      $("#txtendereco").addClass("is-invalid");
+                  }
+                  else{
+                      $("#txtendereco").addClass("is-valid");
+                  }
+            
+                  if(telefone == ""){
+                      $("#txttelefone").addClass("is-invalid");
+                  }
+                  else{
+                      $("#txttelefone").addClass("is-valid");
+                  }
+                
+                if(cidade == ""){
+                      $("#txtcidade").addClass("is-invalid");
+                  }
+                  else{
+                      $("#txtcidade").addClass("is-valid");
+                  }
+                
+                if(email == ""){
+                      $("#txtemail").addClass("is-invalid");
+                  }
+                  else{
+                      $("#txtemail").addClass("is-valid");
+                  }
+                          
+                if(nome=="" || endereco=="" || telefone=="" || cidade=="" || email==""){
+                    $("#envio").text("Preencher Todos os campos !!").css("color","red");
+                   }
+                else{
+                    $("#envio").text("Enviado!");
+                    $("#txtnome").removeClass("is-invalid").removeClass("is-valid");
+                    $("#txtendereco").removeClass("is-invalid").removeClass("is-valid");
+                    $("#txttelefone").removeClass("is-invalid").removeClass("is-valid");
+                    $("#txtcidade").removeClass("is-invalid").removeClass("is-valid");
+                    $("#txtemail").removeClass("is-invalid").removeClass("is-valid");
+
+                    $("#txtnome").val("");
+                    $("#txtendereco").val("");
+                    $("#txttelefone").val("");
+                    $("#txtcidade").val("");
+                    $("#txtemail").val("");
+                    $("#txtarea").val("");
+                }
+              
+            
+        })
+            $("#btnnovo").click(function(){
+                
+            $("#txtnome").removeClass("is-invalid").removeClass("is-valid");
+            $("#txtendereco").removeClass("is-invalid").removeClass("is-valid");
+            $("#txttelefone").removeClass("is-invalid").removeClass("is-valid");
+            $("#txtcidade").removeClass("is-invalid").removeClass("is-valid");
+            $("#txtemail").removeClass("is-invalid").removeClass("is-valid");
+                
+            $("#txtnome").val("");
+            $("#txtendereco").val("");
+            $("#txttelefone").val("");
+            $("#txtcidade").val("");
+            $("#txtemail").val("");
+            $("#txtarea").val("");
+            $("#envio").text("");
+                
+                
+            })
+      
+      })
+      
+      </script>
+      
+      
+      
+  </body>
+</html>

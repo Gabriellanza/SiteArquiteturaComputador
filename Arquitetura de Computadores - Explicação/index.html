@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/index.css" />
+    <title>Arquitetura de Computadores</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <header>
+       <div class="row topo">
+           <div class="col-6">
+            <img src="imagens/logoletra.png" class="img-fluid" />
+            </div>
+            <div class="col-6">
+            <img src="imagens/logofim.png" class="img-fluid" />
+                 </div>
+        </div>
+        
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="index.html">InfoHardware</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link " href="index2.html">Projeto</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index4.html">Modificações Feitas</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="index3.html">Entre em Contato</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+        
+        
+        
+        
+        <br/>
+        <div class="container">
+        <div class="titulo">Matéria: Organização e Arquitetura de Computadores</div>
+        </div>
+        </header>
+        <main>
+     
+            <p style="font-size: 20px;font-weight: bold;">Resumo dos Componentes</p>
+        
+        
+        
+       <div class="row">
+        <div class="col-6"> <p class="subtitulos">Unid. Lógica e Aritmética - ULA</p></div>
+       
+           
+       </div>
+        
+        <div>
+        <p class="subtitulos2"><lu>Ações desempenhadas pela ULA: </lu>
+            <li>Realiza operações lógicas: AND, OR, XOR, NOT, etc </li>
+            <li>Realiza operações aritméticas: Soma, Subtração, Multiplicação, Divisão, etc.</li>
+            <li>Realiza operações comparativas:Maior, Menor, Igual, Diferente, etc.</li>
+        </div>
+        
+        <br/>
+        <br/>
+        
+        <div class="row">
+        <div class="col-6"> <p class="subtitulos">DECODIFICADOR - (DEC)</p></div>
+       
+           
+       </div>
+        
+        <div>
+            
+            <lu class="subtitulos2">Ações desencadeadas por um “DEC”:</lu>
+            <li>Identifica os tipos de instruções vindas dos programas contidos na Memória RAM</li>
+            <li>Transmite as operações para a Unidade de Controle (UC) que aciona os componentes por meio de sinais de controle</li>
+            <li>Exemplo: Se a instrução for decodificada como
+            uma operação lógica e aritmética, a UC
+            selecionará a Unidade Lógica e Aritmética
+            (ULA) para processamento.</li>
+            
+            </div>
+            <br/>
+            <br/>
+            
+        <div class="row">
+        <div class="col-6"> <p class="subtitulos">Memória RAM</p></div>
+       
+              </div>
+        <div>
+        
+        <li>Interligação com Barramentos</li>
+        <li>Controle por meio de elementos Tri-State</li>
+            
+        
+         </div> 
+        <br/>
+        <br/>
+        
+        <div class="row">
+        <div class="col-6"> <p class="subtitulos">Barramentos</p></div>
+        
+            </div>
+        <div>
+        <li>É o agrupamento de vias ou fios que servem
+        para transmitir sinais de Dado, Endereço e
+        Controle</li>
+        <li>Barramento de Dados: agrupamento específico
+        para transportar sinais de dados</li>
+        <li>Barramento de Endereço: agrupamento
+        específico para transportar sinais de endereços</li>
+        <li>Barramento de Controle: agrupamento
+        específico para transportar sinais de controle</li>
+        </div>
+        <br/>
+        <br/>
+        <div class="row">
+        <div class="col-6"> <p class="subtitulos">Contadores e Tri-State</p></div>
+        
+            </div>
+        <div>
+        Combinam registradores com circuitos
+        aritméticos.
+        <li>Contador de incremento → n + unidade</li>
+        <li>Contador de decremento → n - unidade</li>
+            <lu class="subtitulos2">Tri-State:</lu>
+        <li>O Tri-State pode ser entendido como uma Torneira
+        de um encanamento hidráulico, só que vão os fios ou vias.</li>
+       
+        </div>
+        <br/>
+        <br/>
+            <div class="col-6"> <p class="subtitulos">Circuitos Combinacionais</p></div>
+           
+            <li>Um circuito combinacional é constituído de um
+            conjunto de portas lógicas, as quais determinam
+            os valores das saídas diretamente a partir dos
+            valores atuais das entradas.</li>
+         <div class="col-6"> <p class="subtitulos">Circuitos Sequenciais</p></div>
+            <li>Um circuito sequencial é composto por um circuito
+            combinacional e elementos de memória.</li>
+           <li>Algumas saídas do circuito combinacional são
+            entradas para os elementos de memória,
+            recebendo o nome de variáveis do próximo
+            estado.</li>
+    
+      </main>
+        <br/>
+        <br/>
+        
+        <footer class="row align-items-center topo">
+           <div class="col-4">
+            <img src="imagens/logoletra.png" class="img-fluid" width="700px;"/>
+            </div>
+             <div class="col-4"></div>
+            <div class="col-4 ">
+                <div class="row" >
+                    <div class="col-6">
+                <a href="index3.html" style="color: white;">Entre Em Contato</a>
+                        </div>
+                    <div class="col-4 ">
+                <a href="#" style="color: white;" >Sobre Nós</a>
+                        </div>
+                    </div>
+            </div>
+        </footer>
+      </div>
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
